@@ -1,0 +1,80 @@
+<div class="title-container">
+    <br />
+    <div class="title">
+        <h1><a href="#">DBS Bank</a></h1>
+    </div>
+</div>
+
+<br />
+
+<div class="main">
+
+
+    <div class="main-col-1">
+        <h2>Welcome to DBS Bank Registration</h2>
+    </div>
+    <div class="main-col-2">
+
+        <span style="color:red">{{errorMsg | json}}</span>
+        <h3 style="color:#007897;">Registration Form</h3><br>
+        <div>
+                
+            <form [formGroup]="registerForm" (ngSubmit)="submit()">
+                <table style="table-layout: fixed;">
+                    <tr>
+                        <td>EmailId:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="inputBox" formControlName="email" required="required" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Password: </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" class="inputBox" formControlName="password" required="required" /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>First Name: </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="inputBox" formControlName="firstname" required="required" /><br />
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name: </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="inputBox" formControlName="lastname" required="required" /><br />
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UserName: </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="inputBox" formControlName="username" required="required" /><br />
+                           
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="Submit" class="btn-signin" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="login" class="btn-login">Login</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+
+
+        </div>
+    </div>

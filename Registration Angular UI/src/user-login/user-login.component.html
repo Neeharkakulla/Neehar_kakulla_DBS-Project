@@ -1,0 +1,44 @@
+
+<div class="main">
+
+
+    <div class="main-col-1">
+        <h2>Welcome to DBS Bank Registration</h2>
+    </div>
+    <div class="main-col-2">
+
+        <h3 style="color:#007897;"> Login or Signup</h3><br>
+        <div>
+
+
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <span style="color:red">{{errorMsg| json}}</span>
+                <table style="table-layout: fixed">
+
+                    <tr>
+                        <td>User Name :</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" class="inputBox" formControlName="username" /><br></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password:</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="password" class="inputBox" formControlName="password"/><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><br><input class="btn-login" type="submit" value="Sign in">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            <a href="user-registration" class="btn-signin">Don't have an account?</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+    </div>
+</div>
